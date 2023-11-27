@@ -1,4 +1,4 @@
-
+//CODIGO PARA MOSTRAR A ORDEM DE EXECUÇÃO DA PILHA
 
 void main(){
   print("Started Main");
@@ -22,8 +22,4 @@ void funcitionOne(){
 
     print("Finished F02");
 
-  }
-
-  TESTE(){
-    
   }
