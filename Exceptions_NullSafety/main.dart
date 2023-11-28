@@ -1,25 +1,30 @@
 //CODIGO PARA MOSTRAR A ORDEM DE EXECUÇÃO DA PILHA
 
-void main(){
+void main() {
   print("Started Main");
   funcitionOne();
   print("Finished Main");
-
 }
 
-
-void funcitionOne(){
+void funcitionOne() {
   print("Started F01");
   functionTwo();
   print("Finished F02");
-  }
+}
 
-  void functionTwo(){
-    print("Starde F02");
-    for(int i = 1; i <= 5; i++){
-      print(i);
+void functionTwo() {
+  print("Starde F02");
+  for (int i = 1; i <= 5; i++) {
+    print(i);
+    try {
+      double amount = double.parse("Not a number");
+    } catch (e, s) {
+      print(e);
+      print(s);
+    } finally {
+      print("Chegou no Finally");
     }
-
-    print("Finished F02");
-
   }
+
+  print("Finished F02");
+}
